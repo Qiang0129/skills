@@ -7,7 +7,7 @@
 在 Codex 中添加这个 GitHub marketplace：
 
 ```text
-codex plugin marketplace add Qiang0129/web-sop-builder --ref main
+codex plugin marketplace add Qiang0129/skills --ref main
 codex plugin add web-sop-builder@web-sop-builder
 ```
 
