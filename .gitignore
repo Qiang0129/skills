@@ -1,0 +1,27 @@
+# Python and local runtime files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.playwright-cli/
+
+# Local SOP jobs and generated deliverables
+annotation-job.json
+sop-job.json
+work/
+outputs/
+*.docx
+*.pdf
+*.png
+
+# Local configuration and credentials
+.env
+.env.*
+*.log
+*credential*
+*password*
+*passwd*
+*token*
+*.pem
+*.key
+*.bak

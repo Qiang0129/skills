@@ -1,0 +1,4 @@
+interface:
+  display_name: "网页 SOP 编写"
+  short_description: "生成网页后台操作截图标注与中文 DOCX SOP 文档"
+  default_prompt: "使用 $web-sop-builder 为当前网页后台流程生成截图标注预览；待我确认后再生成中文 DOCX SOP。"

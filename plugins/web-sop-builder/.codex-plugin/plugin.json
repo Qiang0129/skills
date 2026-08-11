@@ -1,0 +1,27 @@
+{
+  "name": "web-sop-builder",
+  "version": "1.0.0",
+  "description": "Evidence-based Chinese SOPs for web back-office workflows, annotated screenshots, and DOCX delivery.",
+  "author": {
+    "name": "Qiang0129",
+    "url": "https://github.com/Qiang0129"
+  },
+  "homepage": "https://github.com/Qiang0129/web-sop-builder",
+  "repository": "https://github.com/Qiang0129/web-sop-builder",
+  "license": "MIT",
+  "keywords": ["SOP", "OMS", "ERP", "WMS", "Codex", "screenshots", "DOCX"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "网页 SOP 编写",
+    "shortDescription": "生成网页后台截图标注与中文 DOCX SOP",
+    "longDescription": "为 OMS、ERP、WMS 等网页后台取证，生成截图标注预览，并在确认后构建中文 DOCX SOP。",
+    "developerName": "Qiang0129",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Write"],
+    "brandColor": "#AD1F1D",
+    "defaultPrompt": [
+      "使用 $web-sop-builder 为当前后台流程生成截图标注预览。",
+      "使用 $web-sop-builder 在确认截图后生成中文 DOCX SOP。"
+    ]
+  }
+}
