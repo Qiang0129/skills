@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub 到 WSL 部署与维护"
+  short_description: "部署 GitHub 服务并低交互维护受管 WSL 与 Cloudflare 项目"
+  default_prompt: "使用 $deploy-github-to-wsl 分析并部署这个 GitHub 仓库；已受管项目优先执行安全的低交互维护。"

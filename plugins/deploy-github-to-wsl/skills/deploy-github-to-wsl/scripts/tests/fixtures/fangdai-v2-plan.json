@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "2.0",
+  "kind": "deploy-github-to-wsl/manifest",
+  "repository": {
+    "canonicalUrl": "https://github.com/Qiang0129/fangdai",
+    "ref": "main",
+    "commit": "47418607134b4e31b583769d76be96d9e6f2d446",
+    "slug": "fangdai",
+    "sourcePath": "/root/projects/fangdai"
+  },
+  "wsl": {
+    "distribution": "Ubuntu"
+  },
+  "compose": {
+    "projectName": "codex-fangdai",
+    "files": [
+      "/root/projects/fangdai/.codex-deploy/compose.yaml"
+    ],
+    "profiles": [
+      "tunnel"
+    ],
+    "appService": "app",
+    "tunnelService": "cloudflared",
+    "internalPort": 8080,
+    "pull": false,
+    "build": false
+  },
+  "cloudflare": {
+    "credentialProfile": "public",
+    "accountId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "zoneId": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "zoneName": "scuccs.me",
+    "hostname": "fangdai.scuccs.me",
+    "tunnelName": "wsl-fangdai",
+    "service": "http://app:8080",
+    "accessMode": "anonymous",
+    "tunnelTokenPath": "/root/.config/deploy-github-to-wsl/fangdai/secrets/tunnel_token",
+    "configurationHash": "f2c5eac3202249df42fcdbf18b5ca66f77223d1d5f119527b3f6dd7b69ac8da9"
+  },
+  "state": {
+    "path": "/root/.local/state/deploy-github-to-wsl/fangdai/deployment.json"
+  },
+  "riskConfirmations": [],
+  "approval": {
+    "scope": [
+      "wslWrite",
+      "containers",
+      "cloudflareTunnel",
+      "cloudflareRoute"
+    ],
+    "planHash": null
+  },
+  "deploymentFiles": []
+}

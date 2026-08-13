@@ -1,0 +1,25 @@
+{
+  "name": "deploy-github-to-wsl",
+  "version": "1.0.0",
+  "description": "通用 GitHub 仓库到 WSL Docker Compose 的安全公网部署与受管维护。",
+  "author": {
+    "name": "Qiang0129",
+    "url": "https://github.com/Qiang0129"
+  },
+  "homepage": "https://github.com/Qiang0129/skills",
+  "repository": "https://github.com/Qiang0129/skills",
+  "keywords": ["WSL", "Docker", "Compose", "Cloudflare", "GitHub", "部署"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "GitHub 到 WSL 部署与维护",
+    "shortDescription": "部署 GitHub 服务并维护受管 WSL 与 Cloudflare 项目",
+    "longDescription": "分析 GitHub 仓库，规划或执行 WSL Docker Compose 公网部署，并对已受管项目执行受限的低交互维护。",
+    "developerName": "Qiang0129",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Write"],
+    "defaultPrompt": [
+      "使用 $deploy-github-to-wsl 分析并部署这个 GitHub 仓库。",
+      "使用 $deploy-github-to-wsl 检查并修复已受管的 WSL 部署项目。"
+    ]
+  }
+}
